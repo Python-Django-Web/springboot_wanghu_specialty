@@ -1,0 +1,7 @@
+<config>
+	<!-- 配置成自己申请的微信应用的参数 -->
+	<appKey>wxa4f049e539249a4b</appKey><!--mch_appid-->
+	<mchid>1487720952</mchid>  <!--商户号  mchid-->
+	<cert_path>D:\\myWork\\jinlu\\src\\com\\jinlu\\controller\\apiclient_cert.p12</cert_path><!--注意路径的写法，路径里需要包含文件的名字-->
+<!-- 	<cert_path>C:\\X5\\Bex5_V3.5Pre\\model\\BIZ\\cert\\apiclient_cert.p12</cert_path>注意路径的写法，路径里需要包含文件的名字 -->
+</config>

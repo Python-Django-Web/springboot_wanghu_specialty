@@ -1,0 +1,32 @@
+package com.cwh.springbootMybatis.weixin.entity.message;
+
+public class text {
+
+	private String content;
+
+	private String color;
+	
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	@Override
+	public String toString() {
+		return "text [content=" + content + ", color=" + color + "]";
+	}
+
+	
+
+}

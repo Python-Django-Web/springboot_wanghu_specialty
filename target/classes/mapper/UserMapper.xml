@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cwh.springbootMybatis.web.wx.user.mapper.UserMapper">
+
+	<!-- <if test="user_id != null"> user_id = #{user_id} </if> -->
+	<!-- insertInto -->
+	<sql id="insertInto">
+		<if test="userid != null">
+			userid,
+		</if>
+		<if test="openid != null">
+			openid,
+		</if>
+		<if test="username != null">
+			username,
+		</if>
+		<if test="userhead != null">
+			userhead,
+		</if>
+		<if test="regtime != null">
+			regtime,
+		</if>
+		<if test="mobile != null">
+			mobile,
+		</if>
+		<if test="realname != null">
+			realname,
+		</if>
+		<if test="deletestatus != null">
+			deletestatus
+		</if>
+	</sql>
+	<!-- insertValue -->
+	 <sql id="insertValue">
+		<if test="userid != null">
+			#{userid},
+		</if>
+		<if test="openid != null">
+			#{openid},
+		</if>
+		<if test="username != null">
+			#{username},
+		</if>
+		<if test="userhead != null">
+			#{userhead},
+		</if>
+		<if test="regtime != null">
+			#{regtime},
+		</if>
+		<if test="mobile != null">
+			#{mobile},
+		</if>
+		<if test="realname != null">
+			#{realname},
+		</if>
+		<if test="deletestatus != null">
+			#{deletestatus}
+		</if>
+	</sql> 
+	<!-- updateSet -->
+	 <sql id="updateSet">
+		<if test="userid != null">
+			userid = #{userid},
+		</if>
+		<if test="openid != null">
+			openid = #{openid},
+		</if>
+		<if test="username != null">
+			username = #{username},
+		</if>
+		<if test="userhead != null">
+			userhead = #{userhead},
+		</if>
+		<if test="regtime != null">
+			regtime = #{regtime},
+		</if>
+		<if test="mobile != null">
+			mobile = #{mobile},
+		</if>
+		<if test="realname != null">
+			realname = #{realname},
+		</if>
+		<if test="deletestatus != null">
+			deletestatus = #{deletestatus}
+		</if>
+	</sql> 
+
+	<!-- 存用户 -->
+	<insert id="insertUser" parameterType="com.cwh.springbootMybatis.web.wx.user.entity.User">
+		insert into user
+		<selectKey keyProperty="id" resultType="int">
+			select LAST_INSERT_ID()
+		</selectKey> 
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			 <include refid="insertInto"></include> 
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			 <include refid="insertValue"></include> 
+		</trim>
+	</insert>
+
+	<!-- 修改用户 -->
+	<update id="updataUser" parameterType="com.cwh.springbootMybatis.web.wx.user.entity.User">
+		update user
+		<set>
+			<include refid="updateSet"></include>
+		</set>
+		where openid = #{openid}
+	</update> 
+
+	<!-- user_id查用户 -->
+	 <select id="selectUserByOpenId" parameterType="String"
+		resultType="com.cwh.springbootMybatis.web.wx.user.entity.User">
+		select * from user where openid=#{openid}
+	</select> 
+
+</mapper>

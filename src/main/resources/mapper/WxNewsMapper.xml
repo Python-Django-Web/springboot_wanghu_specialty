@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cwh.springbootMybatis.weixin.mapper.WxNewsMapper">
+
+	<!-- 查询所有返回信息 -->
+	<select id="AllNewsSelect" resultType="com.cwh.springbootMybatis.weixin.entity.WxNews">
+		select
+		*
+		from wx_news
+	</select>
+
+	<!-- 通过ct_key查询单个信息 -->
+	<select id="NewsSelectCt_key" parameterType="String"
+		resultType="com.cwh.springbootMybatis.weixin.entity.WxNews">
+		select
+		*
+		from wx_news where ct_key =#{ct_key}
+	</select>
+
+	<!-- 添加news信息 ,添加完直接getCt_key可以得到ct_key值 -->
+	<insert id="InsertNews" parameterType="com.cwh.springbootMybatis.weixin.entity.WxNews">
+		<selectKey resultType="java.lang.String" keyProperty="ct_key">
+			SELECT
+			LAST_INSERT_ID()
+		</selectKey>
+		insert into wx_news
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			ct_key,
+			<if test="type != null">
+				type,
+			</if>
+			<if test="content != null">
+				content,
+			</if>
+			<if test="intro != null">
+				intro,
+			</if>
+			<if test="pic_url != null">
+				pic_url,
+			</if>
+			<if test="url != null">
+				url,
+			</if>
+			<if test="delete_status != null">
+				delete_status,
+			</if>
+			<if test="addtime != null">
+				addtime,
+			</if>
+			<if test="remark != null">
+				remark,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			#{ct_key,jdbcType=VARCHAR},
+			<if test="type != null">
+				#{type,jdbcType=INTEGER},
+			</if>
+			<if test="content != null">
+				#{content,jdbcType=VARCHAR},
+			</if>
+			<if test="intro != null">
+				#{intro,jdbcType=VARCHAR},
+			</if>
+			<if test="pic_url != null">
+				#{pic_url,jdbcType=VARCHAR},
+			</if>
+			<if test="url != null">
+				#{url,jdbcType=VARCHAR},
+			</if>
+			<if test="delete_status != null">
+				#{delete_status,jdbcType=VARCHAR},
+			</if>
+			<if test="addtime != null">
+				#{addtime,jdbcType=VARCHAR},
+			</if>
+			<if test="remark != null">
+				#{remark,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+
+	<!-- 修改news信息,也可以用来做假删除 -->
+	<update id="UpdateNews" parameterType="com.cwh.springbootMybatis.weixin.entity.WxNews">
+		update wx_news
+		<set>
+			<if test="type != null">
+				type = #{type,jdbcType=INTEGER},
+			</if>
+			<if test="content != null">
+				content = #{content,jdbcType=VARCHAR},
+			</if>
+			<if test="title != null">
+				title = #{title,jdbcType=VARCHAR},
+			</if>
+			<if test="intro != null">
+				intro = #{intro,jdbcType=VARCHAR},
+			</if>
+			<if test="pic_url != null">
+				pic_url = #{pic_url,jdbcType=VARCHAR},
+			</if>
+			<if test="url != null">
+				url = #{url,jdbcType=VARCHAR},
+			</if>
+			<if test="delete_status != null">
+				delete_status = #{delete_status,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where ct_key = #{ct_key,jdbcType=VARCHAR}
+	</update>
+	
+	<!-- 删除自动回复 -->
+	<delete id="deleteNews" parameterType="String">
+		DELETE FROM wx_news WHERE ct_key = #{ct_key} 
+	</delete>
+	
+</mapper>

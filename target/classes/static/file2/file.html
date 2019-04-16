@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+<!-- <script src="js/vue.min.js"></script> -->
+<title>测试图片上传</title>
+</head>
+<body>
+	<div id="app-1">
+		<input id="file" type="file" name="file" @change="uploadImg($event)" />
+		<img alt="" width="60px" height="60px" :src="['../'+img]">
+	</div>
+</body>
+<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/vue.min.js"></script>
+<script src="js/ajaxfileupload.js"></script>
+<script>
+	var vm = new Vue(
+			{
+				el : "#app-1",
+				data : {
+					img : ""
+				},
+				methods : {
+					/**
+					 * 上传图片
+					 * @param event
+					 */
+					uploadImg : function(event) {
+						var obj = event.target;
+						var $file = $(obj);
+						var fileObj = $file[0];
+						var windowURL = window.URL || window.webkitURL;
+						var dataURL;
+						var $img = $(obj).parent();
+						if (fileObj && fileObj.files && fileObj.files[0]) {
+							dataURL = windowURL
+									.createObjectURL(fileObj.files[0]);
+							//$img.css('background-image',"url("+dataURL+")");
+						}
+						$img.find("span").html("");
+
+						var inputId = obj.id;
+						//根据id判断生产环境还是办公环境
+						$
+								.ajaxFileUpload({
+									url : '../web/FileUpload', // 需要链接到服务器地址
+									secureuri : false,
+									fileElementId : "file", // 文件选择框的id属性
+									dataType : 'text', // 服务器返回的格式，可以是json
+									success : function(rs) // 相当于java中try语句块的用法
+									{
+										console.log("我的图" + rs)
+										var url = rs
+												.replace(
+														'<pre style="word-wrap: break-word; white-space: pre-wrap;">',
+														"");
+										url = url.replace("</pre>", "")
+										console.log("我的图" + url)
+										var urlImg = JSON.parse(url);
+										console.log("我的图" + urlImg.data)
+										vm.img = urlImg.data
+										/*$("#img").attr("src",
+												"../" + urlImg.data); */
+									},
+									error : function(data, status, e) // 相当于java中catch语句块的用法
+									{
+										alert('失败');
+
+									}
+								})
+
+					}
+				}
+			})
+</script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>HarLan | Better Applying Chemistry</title>
+</head>
+<body>
+	<!--顶部区域开始-->
+	<div class="entire" id="rrapp">
+		<!--顶部区域开始-->
+		<div class="cont_e">
+			<input id="file" type="file" name="file" @change="uploadImg($event)" /><br>
+			<!-- <img alt="" width="60px" height="60px" :src="img"> -->
+			<img alt="" width="60px" height="60px" :src="['../'+img]">
+		</div>
+
+		<!--分页-->
+<!-- 		<div class="pagination" id="pagerBarStartSale"></div>
+ -->
+ 		<!-- <a href="http://localhost/maven-demo/test/img/file.html?a=123544555">123123123</a> -->
+		<div class="clear"></div>
+
+</div>
+
+		<script src="js/jQuery/jquery-1.11.2.js" type="text/javascript"charset="utf-8"></script>
+		<script src="js/plugins/vue/vue.min.js"></script>
+		<script src="js/plugins/ajaxfileupload.js"></script>
+		<script src="js/lib/fileUpdate.js"></script>
+		<script src="js/lib/base64.js"></script> 
+		<!-- <script src="plugins/jquery.pagination.js"></script> -->
+		<!-- <script src="js/placehoder.js" type="text/javascript" charset="utf-8"></script> -->
+		<!--时间插件-->
+	<!-- 	<script language="javascript" type="text/javascript"src="js/My97DatePicker/WdatePicker.js"></script> -->
+		<script src="js/lib/common.js"></script> 
+<script type="text/javascript">
+  /* 鼠标特效 */
+  var a_idx = 0;
+  jQuery(document).ready(function($) {
+      $("body").click(function(e) {
+          var a = new Array("❤Java❤","❤C++❤","❤PHP❤","❤Mysql❤","❤Oracle❤","❤.NET❤","❤JavaScript❤","❤H5❤","❤Python❤","❤Json❤","❤Ruby❤","❤Go❤");
+         var $i = $("<span></span>").text(a[a_idx]);
+          a_idx = (a_idx + 1) % a.length;
+          var x = e.pageX,
+         y = e.pageY;
+         $i.css({
+             "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+             "top": y - 20,
+             "left": x,
+             "position": "absolute",
+             "font-weight": "bold",
+             "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+         });
+         $("body").append($i);
+         $i.animate({
+             "top": y - 180,
+             "opacity": 0
+         },
+        1500,
+         function() {
+             $i.remove();
+         });
+     });
+ });
+ </script>
+</body>
+</html>

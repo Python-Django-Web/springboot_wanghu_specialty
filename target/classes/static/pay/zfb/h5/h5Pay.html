@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+input {
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+
+	<form method="post" action="/h5/h5Pay" target="_blank">
+
+
+		商户订单号 ：<input type="text" name="WIDout_trade_no" id="WIDout_trade_no" value=""><br> 
+		
+		订单名称 ：<input type="text" name="WIDsubject" id="WIDsubject" value="测试"><br> 
+		
+		付款金额 ：<input type="text"name="WIDtotal_amount" id="WIDtotal_amount" value="0.01"><br>
+		
+		商品描述：<input type="text" name="WIDbody" id="WIDbody" value="支付宝支付测试"><br>
+		
+		<input type="submit" name="submit" id="submit" value="h5支付"><br>
+
+
+	</form>
+</body>
+<script type="text/javascript">
+	$(function trade_no(){
+		$.get("/out_trade_no",
+		function(res){
+		$("#WIDout_trade_no").val(res);
+		})
+	})
+</script>
+</html>

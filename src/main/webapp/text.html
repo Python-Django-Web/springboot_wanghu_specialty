@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>富文本编辑器</title>
+<meta charset="UTF-8"></meta>
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3" />
+<meta http-equiv="description" content="This is my page" />
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" href="../js/kindeditor/themes/default/default.css" />
+<script type="text/javascript" src="../js/kindeditor/kindeditor-min.js"></script>
+<script type="text/javascript" src="../js/kindeditor/lang/zh_CN.js"></script>
+<script>
+	var editor;
+	KindEditor.ready(function(K) {
+		editor = K.create('textarea[name="content"]', {
+			resizeType : 1,
+			allowPreviewEmoticons : false,
+			allowImageUpload : true,
+			afterBlur : function() {
+				this.sync();
+			},
+			items : [ 'source', 'fontname', 'fontsize', '|', 'forecolor',
+					'hilitecolor', 'bold', 'italic', 'underline',
+					'removeformat', '|', 'justifyleft', 'justifycenter',
+					'justifyright', 'insertorderedlist', 'insertunorderedlist',
+					'|', 'emoticons', 'image', 'multiimage', 'link',
+					'fullscreen' ]
+		});
+	});
+</script>
+</head>
+
+<body >
+	<div id="whapp">
+	
+
+	<div class="row cl">
+
+		<label class="form-label col-2">详情：</label>
+		<div class="formControls col-10">
+			<textarea name="content" id="goods_detail"
+				style="width: 80%;height: 500px;"></textarea>
+		</div>
+	</div>
+	<!-- </br>
+	</br> -->
+	<div class="col-10 col-offset-2">
+
+		<button onClick="add()" id="butt" class="btn btn-primary radius"
+			type="button">
+			<i class="Hui-iconfont">&#xe632;</i> 提交
+		</button>
+		<button onClick="history.go(-1);" class="btn btn-default radius"
+			type="button">&nbsp;&nbsp;返回&nbsp;&nbsp;</button>
+	</div>
+	<!-- </br>
+	</br> -->
+	</div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script type="text/javascript">
+	var vm = new Vue(
+		{
+		el:"#whapp",
+		data:{
+		
+			},
+		mounted: function(){
+				this.$nextTick(function (){
+					vm.GetGoodById();
+				})
+			},
+		filters:{
+			serialSel:function(val){
+				return val + "" + new Date().getTime();
+				}
+			},
+		computed:{},
+		methods:{
+				GetGoodById:function(){
+					$.get("/web/9/GetGoodById"
+					,{
+					},function(res){
+						console.log(res)
+						editor.html( res.data.goodMain);
+					})
+				}			
+			}				
+		});
+</script>
+</html>

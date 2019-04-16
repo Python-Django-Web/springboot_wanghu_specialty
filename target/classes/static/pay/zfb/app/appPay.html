@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+input {
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+</style>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+
+	<form method="post"
+		action="${pageContext.request.contextPath}/pay/zfb/zfbsmDemo/alipay.trade.page.pay.jsp">
+
+
+		商户订单号 ：<input type="text" name="WIDout_trade_no" id="WIDout_trade_no" value=""><br> 
+		订单名称 ：<input type="text" name="WIDsubject" id="WIDsubject" value="测试"><br> 
+		付款金额 ：<input type="text"name="WIDtotal_amount" id="WIDtotal_amount" value="0.01"><br>
+		商品描述：<input type="text" name="WIDbody" id="WIDbody" value="支付宝支付测试"><br>
+		<!-- <input type="submit" name="submit" id="submit" value="二维码xml支付"
+			onclick="capt()"><br> -->
+
+
+	</form>
+	<div id="a">
+		<input type="button" name="button" id="butt1" value="支付宝APP生成订单" onclick="createOrder()"><br> 
+		商户订单号 ：<input type="text"name="out_trade_no" id="out_trade_no" value=""><br>
+		商户交易号 ：<input type="text" name="trade_no" id="trade_no" value=""><br>
+		<input type="button" name="button" id="butt1" value="支付宝APP查询订单" onclick="queryOrder()"><br> 
+		<img alt="" id="zfb" src="">
+	</div>
+</body>
+<script type="text/javascript">
+	$(function trade_no(){
+		$.get("/out_trade_no",
+		function(res){
+		$("#WIDout_trade_no").val(res);
+		})
+	})
+	function createOrder(){
+		$.get("/app/trade/createOrder",function(res){
+			console.log(res);
+			$("#out_trade_no").val(res.message);
+		})
+	}
+	function queryOrder(){
+		$.get("/app/trade/queryOrder",function(res){
+			console.log(res);
+		})
+	}
+</script>
+</html>

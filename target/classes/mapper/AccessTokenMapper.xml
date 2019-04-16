@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cwh.springbootMybatis.weixin.mapper.AccessTokenMapper">
+
+	<select id="select" resultType="com.cwh.springbootMybatis.weixin.entity.AccessToken">
+		select * from wx_access_token where id =1
+	</select>
+
+	<update id="update" parameterType="com.cwh.springbootMybatis.weixin.entity.AccessToken">
+		update wx_access_token set access_token=#{access_token} , add_time=#{add_time}
+		where id = 1
+	</update>
+
+</mapper>

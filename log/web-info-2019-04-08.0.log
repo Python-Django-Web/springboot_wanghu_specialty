@@ -1,0 +1,683 @@
+2019-04-08 16:44:31.990 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Starting Application on PC-20181008BUJM with PID 14260 (started by Administrator in C:\Users\Administrator\Workspaces\MyEclipse 2015 CI\spring)
+2019-04-08 16:44:31.994 [restartedMain] INFO  com.cwh.springbootMybatis.Application - No active profile set, falling back to default profiles: default
+2019-04-08 16:44:32.926 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b94289c: startup date [Mon Apr 08 16:44:32 CST 2019]; root of context hierarchy
+2019-04-08 16:44:33.452 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-04-08 16:44:35.281 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-08 16:44:36.463 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2019-04-08 16:44:36.500 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-04-08 16:44:36.507 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.46
+2019-04-08 16:44:36.919 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-04-08 16:44:36.929 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-04-08 16:44:36.929 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4003 ms
+2019-04-08 16:44:37.927 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-08 16:44:37.929 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.Servlet1' to [/servlet/servlet1.action]
+2019-04-08 16:44:37.930 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.WeiXinServlet' to [/servlet/WeiXinServlet.action]
+2019-04-08 16:44:37.935 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-08 16:44:37.936 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-08 16:44:37.936 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-08 16:44:37.937 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-08 16:44:37.937 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'ServletFilter' to urls: [/servlet/*]
+2019-04-08 16:44:38.995 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b94289c: startup date [Mon Apr 08 16:44:32 CST 2019]; root of context hierarchy
+2019-04-08 16:44:39.081 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/Center]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.CenterController.MyCenter(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 16:44:39.085 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/login]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.LoginController.Login(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 16:44:39.086 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/QRUrl]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.QRUrlController.qr(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 16:44:39.087 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/text]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.test.t(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 16:44:39.087 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/FileUpload]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.file.FileController.upload_File(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+2019-04-08 16:44:39.088 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/trade/create]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.tradeCreate(com.cwh.springbootMybatis.web.pay.wx.bean.WeChatPayRequestBean)
+2019-04-08 16:44:39.088 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/callback]}" onto public void com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.asy_notify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 16:44:39.089 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/WeixinDraw/transfer/account/audit]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.tx.WeixinDraw.wx_tx()
+2019-04-08 16:44:39.090 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/createOrder],methods=[GET]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeCreate() throws com.alipay.api.AlipayApiException
+2019-04-08 16:44:39.090 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/queryOrder],methods=[POST]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeQuery(java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 16:44:39.090 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 16:44:39.090 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund/query]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 16:44:39.091 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/out_trade_no]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.controller.WIDTRout_trade_no.out_trade_no()
+2019-04-08 16:44:39.091 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/h5/h5Pay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.h5.h5Pay.Pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 16:44:39.097 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/smPay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.tradePrecreatePay()
+2019-04-08 16:44:39.098 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/notify_url]}" onto public void com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.precreate_notify_url(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 16:44:39.101 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tx/transfer]}" onto public boolean com.cwh.springbootMybatis.web.pay.zfb.tx.tx.transfer(java.lang.String,java.lang.String,java.lang.String)
+2019-04-08 16:44:39.107 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/limit]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.limit(com.cwh.springbootMybatis.web.wx.good.entity.Good)
+2019-04-08 16:44:39.108 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/{id}/updateGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.updateGood(java.lang.Integer,com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 16:44:39.108 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/insertGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.insertGood(com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 16:44:39.110 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/{openid}/update/{username}]}" onto public java.lang.Integer com.cwh.springbootMybatis.web.wx.user.controller.UserController.update(java.lang.String,java.lang.String)
+2019-04-08 16:44:39.110 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insert]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 16:44:39.110 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insertUser]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert()
+2019-04-08 16:44:39.110 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/te]}" onto public void com.cwh.springbootMybatis.web.wx.user.controller.UserController.asdasd()
+2019-04-08 16:44:39.110 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/selectUserByOpenId]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.selectUserByOpenId()
+2019-04-08 16:44:39.111 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/cMenu]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.cMenuController.cMenu(com.cwh.springbootMybatis.weixin.entity.button.Button)
+2019-04-08 16:44:39.111 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/share]}" onto public void com.cwh.springbootMybatis.weixin.controller.FengXiangController.share(java.lang.String) throws java.lang.Exception
+2019-04-08 16:44:39.112 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Qrcode/create]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.weixin.controller.QrcodeController.createQrcode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-04-08 16:44:39.113 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingUpdate.html]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.WxSettingController.update(com.cwh.springbootMybatis.weixin.entity.WxSetting)
+2019-04-08 16:44:39.113 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingList.html]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.weixin.controller.WxSettingController.getList(org.springframework.web.servlet.ModelAndView)
+2019-04-08 16:44:39.117 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-08 16:44:39.117 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-08 16:44:39.159 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 16:44:39.159 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 16:44:39.220 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 16:44:40.146 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-08 16:44:40.192 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-04-08 16:44:40.196 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-04-08 16:44:40.202 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-04-08 16:44:40.255 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2019-04-08 16:44:40.276 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2019-04-08 16:44:40.441 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-04-08 16:44:40.519 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2019-04-08 16:44:40.525 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Started Application in 9.092 seconds (JVM running for 9.882)
+2019-04-08 16:44:50.162 [http-nio-80-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-08 16:44:50.162 [http-nio-80-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-08 16:44:50.193 [http-nio-80-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2019-04-08 16:44:50.407 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 16:44:50.407 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 16:44:50.407 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:00:11.864 [http-nio-80-exec-24] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:00:11.883 [http-nio-80-exec-24] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:00:11.883 [http-nio-80-exec-24] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:00:38.660 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:00:38.661 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:00:38.661 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:03:31.075 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:03:31.075 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:03:31.075 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:03:31.738 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:03:31.738 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:03:31.739 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:03:32.008 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:03:32.008 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:03:32.008 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:03:32.264 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:03:32.268 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:03:32.269 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:03:32.538 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:03:32.538 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:03:32.538 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:04:20.612 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Starting Application on PC-20181008BUJM with PID 12492 (started by Administrator in C:\Users\Administrator\Workspaces\MyEclipse 2015 CI\spring)
+2019-04-08 17:04:20.613 [restartedMain] INFO  com.cwh.springbootMybatis.Application - No active profile set, falling back to default profiles: default
+2019-04-08 17:04:20.979 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-04-08 17:04:21.079 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32a127fc: startup date [Mon Apr 08 17:04:21 CST 2019]; root of context hierarchy
+2019-04-08 17:04:22.706 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-08 17:04:23.550 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2019-04-08 17:04:23.571 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-04-08 17:04:23.574 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.46
+2019-04-08 17:04:23.896 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-04-08 17:04:23.902 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-04-08 17:04:23.902 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2824 ms
+2019-04-08 17:04:24.750 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-08 17:04:24.752 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.Servlet1' to [/servlet/servlet1.action]
+2019-04-08 17:04:24.752 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.WeiXinServlet' to [/servlet/WeiXinServlet.action]
+2019-04-08 17:04:24.767 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-08 17:04:24.767 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-08 17:04:24.768 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-08 17:04:24.768 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-08 17:04:24.768 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'ServletFilter' to urls: [/servlet/*]
+2019-04-08 17:04:25.384 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32a127fc: startup date [Mon Apr 08 17:04:21 CST 2019]; root of context hierarchy
+2019-04-08 17:04:25.481 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/Center]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.CenterController.MyCenter(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:04:25.483 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/login]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.LoginController.Login(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:04:25.483 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/QRUrl]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.QRUrlController.qr(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:04:25.484 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/text]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.test.t(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:04:25.485 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/FileUpload]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.file.FileController.upload_File(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+2019-04-08 17:04:25.486 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/trade/create]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.tradeCreate(com.cwh.springbootMybatis.web.pay.wx.bean.WeChatPayRequestBean)
+2019-04-08 17:04:25.486 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/callback]}" onto public void com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.asy_notify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:04:25.487 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/WeixinDraw/transfer/account/audit]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.tx.WeixinDraw.wx_tx()
+2019-04-08 17:04:25.488 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/createOrder],methods=[GET]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeCreate() throws com.alipay.api.AlipayApiException
+2019-04-08 17:04:25.488 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/queryOrder],methods=[POST]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeQuery(java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:04:25.488 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:04:25.488 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund/query]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:04:25.489 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/out_trade_no]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.controller.WIDTRout_trade_no.out_trade_no()
+2019-04-08 17:04:25.489 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/h5/h5Pay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.h5.h5Pay.Pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:04:25.495 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/smPay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.tradePrecreatePay()
+2019-04-08 17:04:25.495 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/notify_url]}" onto public void com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.precreate_notify_url(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:04:25.497 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tx/transfer]}" onto public boolean com.cwh.springbootMybatis.web.pay.zfb.tx.tx.transfer(java.lang.String,java.lang.String,java.lang.String)
+2019-04-08 17:04:25.499 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/limit]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.limit(com.cwh.springbootMybatis.web.wx.good.entity.Good)
+2019-04-08 17:04:25.500 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/{id}/updateGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.updateGood(java.lang.Integer,com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:04:25.500 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/insertGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.insertGood(com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:04:25.502 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/{openid}/update/{username}]}" onto public java.lang.Integer com.cwh.springbootMybatis.web.wx.user.controller.UserController.update(java.lang.String,java.lang.String)
+2019-04-08 17:04:25.503 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insert]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:04:25.503 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insertUser]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert()
+2019-04-08 17:04:25.503 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/te]}" onto public void com.cwh.springbootMybatis.web.wx.user.controller.UserController.asdasd()
+2019-04-08 17:04:25.504 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/selectUserByOpenId]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.selectUserByOpenId()
+2019-04-08 17:04:25.504 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/cMenu]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.cMenuController.cMenu(com.cwh.springbootMybatis.weixin.entity.button.Button)
+2019-04-08 17:04:25.504 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/share]}" onto public void com.cwh.springbootMybatis.weixin.controller.FengXiangController.share(java.lang.String) throws java.lang.Exception
+2019-04-08 17:04:25.505 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Qrcode/create]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.weixin.controller.QrcodeController.createQrcode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-04-08 17:04:25.506 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingUpdate.html]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.WxSettingController.update(com.cwh.springbootMybatis.weixin.entity.WxSetting)
+2019-04-08 17:04:25.516 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingList.html]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.weixin.controller.WxSettingController.getList(org.springframework.web.servlet.ModelAndView)
+2019-04-08 17:04:25.522 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-08 17:04:25.524 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-08 17:04:25.591 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:04:25.592 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:04:25.666 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:04:26.664 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-08 17:04:26.730 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-04-08 17:04:26.734 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-04-08 17:04:26.740 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-04-08 17:04:26.789 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2019-04-08 17:04:26.800 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2019-04-08 17:04:26.838 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-04-08 17:04:26.911 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2019-04-08 17:04:26.924 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Started Application in 6.78 seconds (JVM running for 7.454)
+2019-04-08 17:04:31.442 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-08 17:04:31.443 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-08 17:04:31.475 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2019-04-08 17:04:31.679 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:04:31.680 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:04:31.680 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:12:20.583 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Starting Application on PC-20181008BUJM with PID 13708 (started by Administrator in C:\Users\Administrator\Workspaces\MyEclipse 2015 CI\spring)
+2019-04-08 17:12:20.585 [restartedMain] INFO  com.cwh.springbootMybatis.Application - No active profile set, falling back to default profiles: default
+2019-04-08 17:12:20.857 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64ecfa74: startup date [Mon Apr 08 17:12:20 CST 2019]; root of context hierarchy
+2019-04-08 17:12:20.942 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-04-08 17:12:22.425 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-08 17:12:23.154 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2019-04-08 17:12:23.165 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-04-08 17:12:23.167 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.46
+2019-04-08 17:12:23.482 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-04-08 17:12:23.487 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-04-08 17:12:23.488 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2631 ms
+2019-04-08 17:12:24.227 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-08 17:12:24.229 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.Servlet1' to [/servlet/servlet1.action]
+2019-04-08 17:12:24.229 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.WeiXinServlet' to [/servlet/WeiXinServlet.action]
+2019-04-08 17:12:24.232 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-08 17:12:24.233 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-08 17:12:24.233 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-08 17:12:24.234 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-08 17:12:24.234 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'ServletFilter' to urls: [/servlet/*]
+2019-04-08 17:12:24.746 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64ecfa74: startup date [Mon Apr 08 17:12:20 CST 2019]; root of context hierarchy
+2019-04-08 17:12:24.828 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/Center]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.CenterController.MyCenter(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:12:24.830 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/login]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.LoginController.Login(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:12:24.830 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/QRUrl]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.QRUrlController.qr(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:12:24.831 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/text]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.test.t(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:12:24.831 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/FileUpload]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.file.FileController.upload_File(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+2019-04-08 17:12:24.832 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/trade/create]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.tradeCreate(com.cwh.springbootMybatis.web.pay.wx.bean.WeChatPayRequestBean)
+2019-04-08 17:12:24.832 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/callback]}" onto public void com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.asy_notify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:12:24.833 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/WeixinDraw/transfer/account/audit]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.tx.WeixinDraw.wx_tx()
+2019-04-08 17:12:24.835 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/createOrder],methods=[GET]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeCreate() throws com.alipay.api.AlipayApiException
+2019-04-08 17:12:24.835 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/queryOrder],methods=[POST]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeQuery(java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:12:24.835 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:12:24.835 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund/query]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:12:24.836 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/out_trade_no]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.controller.WIDTRout_trade_no.out_trade_no()
+2019-04-08 17:12:24.837 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/h5/h5Pay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.h5.h5Pay.Pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:12:24.843 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/smPay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.tradePrecreatePay()
+2019-04-08 17:12:24.844 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/notify_url]}" onto public void com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.precreate_notify_url(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:12:24.847 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tx/transfer]}" onto public boolean com.cwh.springbootMybatis.web.pay.zfb.tx.tx.transfer(java.lang.String,java.lang.String,java.lang.String)
+2019-04-08 17:12:24.850 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/limit]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.limit(com.cwh.springbootMybatis.web.wx.good.entity.Good)
+2019-04-08 17:12:24.851 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/{id}/updateGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.updateGood(java.lang.Integer,com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:12:24.851 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/insertGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.insertGood(com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:12:24.853 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/{openid}/update/{username}]}" onto public java.lang.Integer com.cwh.springbootMybatis.web.wx.user.controller.UserController.update(java.lang.String,java.lang.String)
+2019-04-08 17:12:24.853 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insert]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:12:24.854 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insertUser]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert()
+2019-04-08 17:12:24.854 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/selectUserByOpenId]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.selectUserByOpenId()
+2019-04-08 17:12:24.854 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/te]}" onto public void com.cwh.springbootMybatis.web.wx.user.controller.UserController.asdasd()
+2019-04-08 17:12:24.855 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/cMenu]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.cMenuController.cMenu(com.cwh.springbootMybatis.weixin.entity.button.Button)
+2019-04-08 17:12:24.856 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/share]}" onto public void com.cwh.springbootMybatis.weixin.controller.FengXiangController.share(java.lang.String) throws java.lang.Exception
+2019-04-08 17:12:24.856 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Qrcode/create]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.weixin.controller.QrcodeController.createQrcode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-04-08 17:12:24.857 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingUpdate.html]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.WxSettingController.update(com.cwh.springbootMybatis.weixin.entity.WxSetting)
+2019-04-08 17:12:24.857 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingList.html]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.weixin.controller.WxSettingController.getList(org.springframework.web.servlet.ModelAndView)
+2019-04-08 17:12:24.864 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-08 17:12:24.864 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-08 17:12:24.908 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:12:24.908 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:12:24.965 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:12:25.659 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-08 17:12:25.721 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-04-08 17:12:25.724 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-04-08 17:12:25.729 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-04-08 17:12:25.756 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2019-04-08 17:12:25.765 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2019-04-08 17:12:25.780 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-04-08 17:12:25.819 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2019-04-08 17:12:25.831 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Started Application in 5.667 seconds (JVM running for 6.183)
+2019-04-08 17:12:30.148 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-08 17:12:30.149 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-08 17:12:30.194 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2019-04-08 17:13:52.720 [Thread-6] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64ecfa74: startup date [Mon Apr 08 17:12:20 CST 2019]; root of context hierarchy
+2019-04-08 17:13:52.750 [Thread-6] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-04-08 17:13:52.750 [Thread-6] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-04-08 17:13:53.077 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Starting Application on PC-20181008BUJM with PID 13708 (started by Administrator in C:\Users\Administrator\Workspaces\MyEclipse 2015 CI\spring)
+2019-04-08 17:13:53.078 [restartedMain] INFO  com.cwh.springbootMybatis.Application - No active profile set, falling back to default profiles: default
+2019-04-08 17:13:53.080 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47411d18: startup date [Mon Apr 08 17:13:53 CST 2019]; root of context hierarchy
+2019-04-08 17:13:53.813 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-08 17:13:53.940 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2019-04-08 17:13:53.941 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-04-08 17:13:53.941 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.46
+2019-04-08 17:13:54.062 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-04-08 17:13:54.067 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-04-08 17:13:54.067 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 987 ms
+2019-04-08 17:13:54.246 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-08 17:13:54.248 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.Servlet1' to [/servlet/servlet1.action]
+2019-04-08 17:13:54.249 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.WeiXinServlet' to [/servlet/WeiXinServlet.action]
+2019-04-08 17:13:54.249 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-08 17:13:54.249 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-08 17:13:54.249 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-08 17:13:54.250 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-08 17:13:54.250 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'ServletFilter' to urls: [/servlet/*]
+2019-04-08 17:13:54.449 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47411d18: startup date [Mon Apr 08 17:13:53 CST 2019]; root of context hierarchy
+2019-04-08 17:13:54.456 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/Center]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.CenterController.MyCenter(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:13:54.456 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/login]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.LoginController.Login(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:13:54.457 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/QRUrl]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.QRUrlController.qr(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:13:54.457 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/text]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.test.t(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:13:54.457 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/FileUpload]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.file.FileController.upload_File(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+2019-04-08 17:13:54.458 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/trade/create]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.tradeCreate(com.cwh.springbootMybatis.web.pay.wx.bean.WeChatPayRequestBean)
+2019-04-08 17:13:54.458 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/callback]}" onto public void com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.asy_notify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:13:54.459 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/WeixinDraw/transfer/account/audit]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.tx.WeixinDraw.wx_tx()
+2019-04-08 17:13:54.460 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/createOrder],methods=[GET]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeCreate() throws com.alipay.api.AlipayApiException
+2019-04-08 17:13:54.460 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/queryOrder],methods=[POST]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeQuery(java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:13:54.461 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:13:54.461 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund/query]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:13:54.461 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/out_trade_no]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.controller.WIDTRout_trade_no.out_trade_no()
+2019-04-08 17:13:54.462 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/h5/h5Pay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.h5.h5Pay.Pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:13:54.462 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/smPay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.tradePrecreatePay()
+2019-04-08 17:13:54.462 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/notify_url]}" onto public void com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.precreate_notify_url(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:13:54.462 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tx/transfer]}" onto public boolean com.cwh.springbootMybatis.web.pay.zfb.tx.tx.transfer(java.lang.String,java.lang.String,java.lang.String)
+2019-04-08 17:13:54.463 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/limit]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.limit(com.cwh.springbootMybatis.web.wx.good.entity.Good)
+2019-04-08 17:13:54.463 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/{id}/updateGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.updateGood(java.lang.Integer,com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:13:54.463 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/insertGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.insertGood(com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:13:54.464 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/{openid}/update/{username}]}" onto public java.lang.Integer com.cwh.springbootMybatis.web.wx.user.controller.UserController.update(java.lang.String,java.lang.String)
+2019-04-08 17:13:54.464 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insert]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:13:54.464 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insertUser]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert()
+2019-04-08 17:13:54.465 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/selectUserByOpenId]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.selectUserByOpenId()
+2019-04-08 17:13:54.465 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/te]}" onto public void com.cwh.springbootMybatis.web.wx.user.controller.UserController.asdasd()
+2019-04-08 17:13:54.465 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/cMenu]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.cMenuController.cMenu(com.cwh.springbootMybatis.weixin.entity.button.Button)
+2019-04-08 17:13:54.465 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/share]}" onto public void com.cwh.springbootMybatis.weixin.controller.FengXiangController.share(java.lang.String) throws java.lang.Exception
+2019-04-08 17:13:54.466 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Qrcode/create]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.weixin.controller.QrcodeController.createQrcode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-04-08 17:13:54.466 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingUpdate.html]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.WxSettingController.update(com.cwh.springbootMybatis.weixin.entity.WxSetting)
+2019-04-08 17:13:54.466 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingList.html]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.weixin.controller.WxSettingController.getList(org.springframework.web.servlet.ModelAndView)
+2019-04-08 17:13:54.467 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-08 17:13:54.468 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-08 17:13:54.474 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:13:54.474 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:13:54.488 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:13:54.672 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-08 17:13:54.800 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-04-08 17:13:54.801 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-04-08 17:13:54.804 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-04-08 17:13:54.810 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2019-04-08 17:13:54.810 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2019-04-08 17:13:54.814 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-04-08 17:13:54.825 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2019-04-08 17:13:54.828 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Started Application in 1.824 seconds (JVM running for 95.179)
+2019-04-08 17:14:06.822 [http-nio-80-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-08 17:14:06.823 [http-nio-80-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-08 17:14:06.830 [http-nio-80-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+2019-04-08 17:16:06.800 [http-nio-80-exec-15] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:16:06.801 [http-nio-80-exec-15] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:16:06.801 [http-nio-80-exec-15] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:20:16.852 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Starting Application on PC-20181008BUJM with PID 9976 (started by Administrator in C:\Users\Administrator\Workspaces\MyEclipse 2015 CI\spring)
+2019-04-08 17:20:16.853 [restartedMain] INFO  com.cwh.springbootMybatis.Application - No active profile set, falling back to default profiles: default
+2019-04-08 17:20:17.211 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-04-08 17:20:17.217 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18d1b137: startup date [Mon Apr 08 17:20:17 CST 2019]; root of context hierarchy
+2019-04-08 17:20:19.077 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-08 17:20:20.242 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2019-04-08 17:20:20.255 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-04-08 17:20:20.257 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.46
+2019-04-08 17:20:20.542 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-04-08 17:20:20.548 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-04-08 17:20:20.548 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3332 ms
+2019-04-08 17:20:21.288 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-08 17:20:21.290 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.Servlet1' to [/servlet/servlet1.action]
+2019-04-08 17:20:21.291 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.WeiXinServlet' to [/servlet/WeiXinServlet.action]
+2019-04-08 17:20:21.295 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-08 17:20:21.296 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-08 17:20:21.296 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-08 17:20:21.296 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-08 17:20:21.297 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'ServletFilter' to urls: [/servlet/*]
+2019-04-08 17:20:21.819 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18d1b137: startup date [Mon Apr 08 17:20:17 CST 2019]; root of context hierarchy
+2019-04-08 17:20:21.888 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/Center]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.CenterController.MyCenter(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:20:21.890 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/login]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.LoginController.Login(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:20:21.890 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/QRUrl]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.QRUrlController.qr(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:20:21.891 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/text]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.test.t(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:20:21.891 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/FileUpload]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.file.FileController.upload_File(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+2019-04-08 17:20:21.892 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/trade/create]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.tradeCreate(com.cwh.springbootMybatis.web.pay.wx.bean.WeChatPayRequestBean)
+2019-04-08 17:20:21.892 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/callback]}" onto public void com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.asy_notify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:20:21.893 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/WeixinDraw/transfer/account/audit]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.tx.WeixinDraw.wx_tx()
+2019-04-08 17:20:21.894 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/createOrder],methods=[GET]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeCreate() throws com.alipay.api.AlipayApiException
+2019-04-08 17:20:21.894 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/queryOrder],methods=[POST]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeQuery(java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:20:21.894 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:20:21.895 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund/query]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:20:21.895 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/out_trade_no]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.controller.WIDTRout_trade_no.out_trade_no()
+2019-04-08 17:20:21.896 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/h5/h5Pay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.h5.h5Pay.Pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:20:21.900 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/smPay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.tradePrecreatePay()
+2019-04-08 17:20:21.901 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/notify_url]}" onto public void com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.precreate_notify_url(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:20:21.901 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tx/transfer]}" onto public boolean com.cwh.springbootMybatis.web.pay.zfb.tx.tx.transfer(java.lang.String,java.lang.String,java.lang.String)
+2019-04-08 17:20:21.903 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/limit]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.limit(com.cwh.springbootMybatis.web.wx.good.entity.Good)
+2019-04-08 17:20:21.904 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/{id}/updateGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.updateGood(java.lang.Integer,com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:20:21.905 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/insertGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.insertGood(com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:20:21.907 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/{openid}/update/{username}]}" onto public java.lang.Integer com.cwh.springbootMybatis.web.wx.user.controller.UserController.update(java.lang.String,java.lang.String)
+2019-04-08 17:20:21.907 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insert]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:20:21.908 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insertUser]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert()
+2019-04-08 17:20:21.908 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/te]}" onto public void com.cwh.springbootMybatis.web.wx.user.controller.UserController.asdasd()
+2019-04-08 17:20:21.908 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/selectUserByOpenId]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.selectUserByOpenId()
+2019-04-08 17:20:21.909 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/cMenu]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.cMenuController.cMenu(com.cwh.springbootMybatis.weixin.entity.button.Button)
+2019-04-08 17:20:21.909 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/share]}" onto public void com.cwh.springbootMybatis.weixin.controller.FengXiangController.share(java.lang.String) throws java.lang.Exception
+2019-04-08 17:20:21.910 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Qrcode/create]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.weixin.controller.QrcodeController.createQrcode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-04-08 17:20:21.911 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingUpdate.html]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.WxSettingController.update(com.cwh.springbootMybatis.weixin.entity.WxSetting)
+2019-04-08 17:20:21.912 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingList.html]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.weixin.controller.WxSettingController.getList(org.springframework.web.servlet.ModelAndView)
+2019-04-08 17:20:21.916 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-08 17:20:21.918 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-08 17:20:21.957 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:20:21.957 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:20:22.002 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:20:22.683 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-08 17:20:22.727 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-04-08 17:20:22.729 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-04-08 17:20:22.733 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-04-08 17:20:22.759 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2019-04-08 17:20:22.768 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2019-04-08 17:20:22.792 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-04-08 17:20:22.824 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2019-04-08 17:20:22.830 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Started Application in 6.395 seconds (JVM running for 6.968)
+2019-04-08 17:21:16.296 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-08 17:21:16.297 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-08 17:21:16.322 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2019-04-08 17:21:16.395 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:16.396 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:16.396 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:16.397 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:16.397 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:16.398 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:16.397 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:16.398 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:16.398 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:16.414 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:16.414 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:16.414 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:16.455 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:16.456 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:16.456 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:16.461 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:16.461 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:16.461 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:16.495 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:16.496 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:16.496 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:23.333 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:23.334 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:23.334 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:23.338 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:23.338 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:23.338 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:23.338 [http-nio-80-exec-12] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:23.338 [http-nio-80-exec-12] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:23.339 [http-nio-80-exec-12] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:23.348 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:23.348 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:23.348 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:23.355 [http-nio-80-exec-20] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:23.355 [http-nio-80-exec-20] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:23.356 [http-nio-80-exec-20] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:23.362 [http-nio-80-exec-28] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:23.363 [http-nio-80-exec-28] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:23.363 [http-nio-80-exec-28] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:21:23.398 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:21:23.399 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:21:23.399 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:29.328 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:29.328 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:29.328 [http-nio-80-exec-30] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:29.328 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:29.342 [http-nio-80-exec-30] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:29.342 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:29.342 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:29.342 [http-nio-80-exec-30] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:29.342 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:29.342 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:29.342 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:29.345 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:29.368 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:29.370 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:29.370 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:29.370 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:29.370 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:29.370 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:29.378 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:29.379 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:29.379 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:29.390 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:29.390 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:29.390 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:45.359 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:45.359 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:45.359 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:45.372 [http-nio-80-exec-8] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:45.379 [http-nio-80-exec-8] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:45.380 [http-nio-80-exec-8] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:45.381 [http-nio-80-exec-20] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:45.381 [http-nio-80-exec-20] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:45.379 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:45.382 [http-nio-80-exec-20] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:45.382 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:45.390 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:45.404 [http-nio-80-exec-19] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:45.404 [http-nio-80-exec-19] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:45.404 [http-nio-80-exec-19] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:45.412 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:45.412 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:45.412 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:45.418 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:45.419 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:45.419 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.176 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.176 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.176 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.181 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.181 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.181 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.196 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.196 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.196 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.203 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.203 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.203 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.235 [http-nio-80-exec-3] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.236 [http-nio-80-exec-3] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.236 [http-nio-80-exec-3] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.236 [http-nio-80-exec-2] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.236 [http-nio-80-exec-2] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.236 [http-nio-80-exec-2] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.284 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.284 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.284 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.585 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.585 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.585 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.585 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.588 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.588 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.589 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.590 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.590 [http-nio-80-exec-26] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.591 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.591 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.591 [http-nio-80-exec-14] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.604 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.604 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.604 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.607 [http-nio-80-exec-5] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.607 [http-nio-80-exec-5] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.607 [http-nio-80-exec-5] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.607 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.608 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.608 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:46.611 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:46.611 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:46.611 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.018 [http-nio-80-exec-25] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.020 [http-nio-80-exec-25] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.020 [http-nio-80-exec-25] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.020 [http-nio-80-exec-29] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.020 [http-nio-80-exec-29] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.020 [http-nio-80-exec-29] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.023 [http-nio-80-exec-25] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.023 [http-nio-80-exec-25] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.023 [http-nio-80-exec-25] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.024 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.025 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.025 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.034 [http-nio-80-exec-8] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.035 [http-nio-80-exec-8] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.035 [http-nio-80-exec-8] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.035 [http-nio-80-exec-24] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.035 [http-nio-80-exec-24] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.035 [http-nio-80-exec-24] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.038 [http-nio-80-exec-20] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.038 [http-nio-80-exec-20] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.039 [http-nio-80-exec-20] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.733 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.733 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.734 [http-nio-80-exec-16] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.738 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.739 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.739 [http-nio-80-exec-27] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.742 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.743 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.743 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.739 [http-nio-80-exec-19] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.747 [http-nio-80-exec-19] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.748 [http-nio-80-exec-19] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.747 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.748 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.748 [http-nio-80-exec-23] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.752 [http-nio-80-exec-15] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.752 [http-nio-80-exec-15] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.752 [http-nio-80-exec-15] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.755 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.755 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.756 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:47.755 [http-nio-80-exec-18] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:47.757 [http-nio-80-exec-18] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:47.757 [http-nio-80-exec-18] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:48.825 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:48.826 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:48.826 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:48.827 [http-nio-80-exec-5] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:48.827 [http-nio-80-exec-5] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:48.827 [http-nio-80-exec-5] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:48.832 [http-nio-80-exec-21] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:48.832 [http-nio-80-exec-21] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:48.832 [http-nio-80-exec-21] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:48.834 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:48.835 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:48.835 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:48.846 [http-nio-80-exec-29] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:48.846 [http-nio-80-exec-29] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:48.846 [http-nio-80-exec-29] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:48.851 [http-nio-80-exec-29] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:48.851 [http-nio-80-exec-29] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:48.851 [http-nio-80-exec-29] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:48.857 [http-nio-80-exec-25] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:48.857 [http-nio-80-exec-25] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:48.857 [http-nio-80-exec-25] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:31:48.873 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:31:48.874 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:31:48.874 [http-nio-80-exec-4] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:04.454 [http-nio-80-exec-18] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:04.454 [http-nio-80-exec-18] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:04.455 [http-nio-80-exec-18] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:04.461 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:04.461 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:04.461 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:04.461 [http-nio-80-exec-18] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:04.461 [http-nio-80-exec-18] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:04.463 [http-nio-80-exec-18] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:04.465 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:04.465 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:04.465 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:04.468 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:04.468 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:04.468 [http-nio-80-exec-10] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:04.479 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:04.480 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:04.480 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:04.483 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:04.484 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:04.484 [http-nio-80-exec-6] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:04.484 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:04.484 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:04.485 [http-nio-80-exec-7] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:05.194 [http-nio-80-exec-9] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:05.194 [http-nio-80-exec-9] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:05.194 [http-nio-80-exec-9] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:05.199 [http-nio-80-exec-30] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:05.199 [http-nio-80-exec-30] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:05.199 [http-nio-80-exec-30] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:05.208 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:05.208 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:05.208 [http-nio-80-exec-13] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:05.209 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:05.209 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:05.209 [http-nio-80-exec-1] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:05.220 [http-nio-80-exec-21] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:05.220 [http-nio-80-exec-21] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:05.220 [http-nio-80-exec-21] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:05.224 [http-nio-80-exec-5] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:05.224 [http-nio-80-exec-5] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:05.224 [http-nio-80-exec-5] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:05.230 [http-nio-80-exec-21] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:05.230 [http-nio-80-exec-21] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:05.230 [http-nio-80-exec-21] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:32:05.232 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 请求,urlhttp://localhost/error?null:
+2019-04-08 17:32:05.232 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - url>>>2: http://localhost/error?null
+2019-04-08 17:32:05.232 [http-nio-80-exec-22] INFO  c.c.s.interceptor.SessionInterceptor - 最终 111flag==false进图判断获取用户信息
+2019-04-08 17:33:50.193 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Starting Application on PC-20181008BUJM with PID 8752 (started by Administrator in C:\Users\Administrator\Workspaces\MyEclipse 2015 CI\spring)
+2019-04-08 17:33:50.194 [restartedMain] INFO  com.cwh.springbootMybatis.Application - No active profile set, falling back to default profiles: default
+2019-04-08 17:33:50.507 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-04-08 17:33:50.580 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b94289c: startup date [Mon Apr 08 17:33:50 CST 2019]; root of context hierarchy
+2019-04-08 17:33:52.130 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-08 17:33:53.124 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2019-04-08 17:33:53.138 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-04-08 17:33:53.139 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.46
+2019-04-08 17:33:53.461 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-04-08 17:33:53.468 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-04-08 17:33:53.468 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2888 ms
+2019-04-08 17:33:54.887 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-08 17:33:54.889 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.Servlet1' to [/servlet/servlet1.action]
+2019-04-08 17:33:54.889 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.cwh.springbootMybatis.servlet.WeiXinServlet' to [/servlet/WeiXinServlet.action]
+2019-04-08 17:33:54.898 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-08 17:33:54.899 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-08 17:33:54.900 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-08 17:33:54.900 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-08 17:33:54.900 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'ServletFilter' to urls: [/servlet/*]
+2019-04-08 17:33:55.579 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b94289c: startup date [Mon Apr 08 17:33:50 CST 2019]; root of context hierarchy
+2019-04-08 17:33:55.687 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/Center]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.CenterController.MyCenter(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:33:55.689 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/login]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.LoginController.Login(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:33:55.690 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/QRUrl]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.QRUrlController.qr(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:33:55.690 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/text]}" onto public java.lang.String com.cwh.springbootMybatis.web.cMenuUrl.test.t(org.springframework.ui.Model,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:33:55.691 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/FileUpload]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.file.FileController.upload_File(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession)
+2019-04-08 17:33:55.691 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/trade/create]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.tradeCreate(com.cwh.springbootMybatis.web.pay.wx.bean.WeChatPayRequestBean)
+2019-04-08 17:33:55.692 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/callback]}" onto public void com.cwh.springbootMybatis.web.pay.wx.app.WeChatPayController.asy_notify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:33:55.692 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/WeixinDraw/transfer/account/audit]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.wx.tx.WeixinDraw.wx_tx()
+2019-04-08 17:33:55.693 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/createOrder],methods=[GET]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeCreate() throws com.alipay.api.AlipayApiException
+2019-04-08 17:33:55.694 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/queryOrder],methods=[POST]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeQuery(java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:33:55.694 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:33:55.696 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/trade/refund/query]}" onto public com.cwh.springbootMybatis.util.R com.cwh.springbootMybatis.web.pay.zfb.app.appPay.tradeRefund(java.lang.String,java.lang.String,java.lang.String) throws com.alipay.api.AlipayApiException
+2019-04-08 17:33:55.697 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/out_trade_no]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.controller.WIDTRout_trade_no.out_trade_no()
+2019-04-08 17:33:55.698 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/h5/h5Pay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.h5.h5Pay.Pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:33:55.702 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/smPay]}" onto public java.lang.String com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.tradePrecreatePay()
+2019-04-08 17:33:55.703 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sm/notify_url]}" onto public void com.cwh.springbootMybatis.web.pay.zfb.smUrl.smPay.precreate_notify_url(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-04-08 17:33:55.703 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tx/transfer]}" onto public boolean com.cwh.springbootMybatis.web.pay.zfb.tx.tx.transfer(java.lang.String,java.lang.String,java.lang.String)
+2019-04-08 17:33:55.704 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/limit]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.limit(com.cwh.springbootMybatis.web.wx.good.entity.Good)
+2019-04-08 17:33:55.705 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/{id}/updateGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.updateGood(java.lang.Integer,com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:33:55.705 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/web/insertGood]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.web.wx.good.controller.GoodController.insertGood(com.cwh.springbootMybatis.web.wx.good.entity.Good,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:33:55.706 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/{openid}/update/{username}]}" onto public java.lang.Integer com.cwh.springbootMybatis.web.wx.user.controller.UserController.update(java.lang.String,java.lang.String)
+2019-04-08 17:33:55.707 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insert]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2019-04-08 17:33:55.707 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/insertUser]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.insert()
+2019-04-08 17:33:55.707 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/selectUserByOpenId]}" onto public com.cwh.springbootMybatis.web.wx.user.entity.User com.cwh.springbootMybatis.web.wx.user.controller.UserController.selectUserByOpenId()
+2019-04-08 17:33:55.707 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Web/User/te]}" onto public void com.cwh.springbootMybatis.web.wx.user.controller.UserController.asdasd()
+2019-04-08 17:33:55.708 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/cMenu]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.cMenuController.cMenu(com.cwh.springbootMybatis.weixin.entity.button.Button)
+2019-04-08 17:33:55.709 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/share]}" onto public void com.cwh.springbootMybatis.weixin.controller.FengXiangController.share(java.lang.String) throws java.lang.Exception
+2019-04-08 17:33:55.710 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/Qrcode/create]}" onto public com.cwh.springbootMybatis.util.GeneralReturn com.cwh.springbootMybatis.weixin.controller.QrcodeController.createQrcode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-04-08 17:33:55.711 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingUpdate.html]}" onto public java.lang.String com.cwh.springbootMybatis.weixin.controller.WxSettingController.update(com.cwh.springbootMybatis.weixin.entity.WxSetting)
+2019-04-08 17:33:55.711 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/main/wxSettingList.html]}" onto public org.springframework.web.servlet.ModelAndView com.cwh.springbootMybatis.weixin.controller.WxSettingController.getList(org.springframework.web.servlet.ModelAndView)
+2019-04-08 17:33:55.712 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-08 17:33:55.713 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-08 17:33:55.752 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:33:55.752 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:33:55.804 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-08 17:33:56.530 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-04-08 17:33:56.574 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-04-08 17:33:56.576 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-04-08 17:33:56.581 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-04-08 17:33:56.617 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2019-04-08 17:33:56.626 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2019-04-08 17:33:56.650 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-04-08 17:33:56.685 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2019-04-08 17:33:56.692 [restartedMain] INFO  com.cwh.springbootMybatis.Application - Started Application in 6.948 seconds (JVM running for 7.66)
+2019-04-08 17:33:56.822 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-08 17:33:56.823 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-08 17:33:56.854 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
